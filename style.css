@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Tahoma, Arial;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* xs */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .quiz-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+/* Sm */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quiz-app {
+  background-color: #f8f8f8;
+  padding: 15px;
+}
+@media (max-width: 576px) {
+  .quiz-app {
+    padding: 0;
+  }
+}
+.quiz-app .quiz-info {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.quiz-app .quiz-area {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+}
+.quiz-app .quiz-area h2 {
+  margin: 0;
+}
+.quiz-app .answer-area {
+  background-color: #fff;
+  padding: 0 20px 20px;
+}
+.quiz-app .answer-area .answer {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border: 1px dotted #dfdfdf;
+}
+.quiz-app .answer-area .answer input[type="Radio"]:checked + label {
+  color: #0075ff;
+}
+.quiz-app .answer-area .answer label {
+  color: #666;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.quiz-app .btn {
+  background-color: #fff;
+  padding: 0 20px 20px;
+  margin-top: 15px;
+}
+.quiz-app .submit-button {
+  background-color: #0075ff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.quiz-app .submit-button:hover {
+  background-color: #0068df;
+}
+.quiz-app .bullets {
+  border-top: 1px solid #dfdfdf;
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+  margin-top: 15px;
+}
+.quiz-app .spans {
+  display: flex;
+  flex: 1;
+}
+.quiz-app .spans span {
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.quiz-app .bullets .spans span.on {
+  background-color: #0075ff;
+}
+.quiz-app .results span {
+  font-weight: bold;
+}
+.last span.bad {
+  color: #dc0a0a;
+}
+.last span.good {
+  color: #009688;
+}
+.last span.perfect {
+  color: #0075ff;
+}
+.last {
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7%;
+  font-size: 18px;
+}
+.last span {
+  font-weight: bold;
+}
