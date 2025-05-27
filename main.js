@@ -117,7 +117,7 @@ function showResults(count) {
     resultDiv.style.top = "50%";
     resultDiv.style.left = "50%";
     quiz.style.cssText =
-      "display: flex; flex-direction: column; justify-content: space-between; height: 100vh;";
+      "display: flex; flex-direction: column; justify-content: space-between; height: 90vh;";
     con.style.cssText = "width: 100%; padding: 0;";
     let body = document.querySelector("body");
     body.appendChild(resultDiv);
