@@ -9,9 +9,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="quiz-app">
+      <div class="lobby">
+        <h2>Choose The Quiz You Want To Answer</h2>
+        <div class="op-div">
+          <div class="options">
+            <input type="radio" id="op1" name="op" data-answer="html" checked />
+            <label for="op1">HTML</label>
+          </div>
+          <div class="options">
+            <input type="radio" id="op2" name="op" data-answer="css" />
+            <label for="op2">CSS</label>
+          </div>
+          <div class="options">
+            <input type="radio" id="op3" name="op" data-answer="js" />
+            <label for="op3">JS</label>
+          </div>
+          <div class="options">
+            <input type="radio" id="op4" name="op" data-answer="react" />
+            <label for="op4">REACT</label>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="submit-button">Submit Your Choose</button>
+        </div>
+      </div>
+      <div class="quiz-app" style="display: none">
         <div class="quiz-info">
-          <div class="category">Category: <span>HTML</span></div>
+          <div class="category">
+            Category: <span style="text-transform: uppercase"></span>
+          </div>
           <div class="count">Questions Count: <span></span></div>
         </div>
         <div>

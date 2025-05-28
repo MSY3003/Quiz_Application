@@ -1,0 +1,82 @@
+[
+  {
+    "title": "What does CSS stand for?",
+    "answer_1": "Cascading Style Sheets",
+    "answer_2": "Creative Style System",
+    "answer_3": "Computer Style Sheets",
+    "answer_4": "Colorful Style Sheets",
+    "right_answer": "Cascading Style Sheets"
+  },
+  {
+    "title": "Which property is used to change the text color in CSS?",
+    "answer_1": "color",
+    "answer_2": "font-color",
+    "answer_3": "text-color",
+    "answer_4": "background-color",
+    "right_answer": "color"
+  },
+  {
+    "title": "How do you add a comment in CSS?",
+    "answer_1": "// This is a comment",
+    "answer_2": "<!-- This is a comment -->",
+    "answer_3": "/* This is a comment */",
+    "answer_4": "# This is a comment",
+    "right_answer": "/* This is a comment */"
+  },
+  {
+    "title": "Which property is used to change the font size in CSS?",
+    "answer_1": "font-size",
+    "answer_2": "text-size",
+    "answer_3": "size",
+    "answer_4": "font-style",
+    "right_answer": "font-size"
+  },
+  {
+    "title": "What is the default value of the position property in CSS?",
+    "answer_1": "relative",
+    "answer_2": "absolute",
+    "answer_3": "static",
+    "answer_4": "fixed",
+    "right_answer": "static"
+  },
+  {
+    "title": "Which property controls the spacing between the lines of text?",
+    "answer_1": "line-height",
+    "answer_2": "spacing",
+    "answer_3": "height",
+    "answer_4": "text-spacing",
+    "right_answer": "line-height"
+  },
+  {
+    "title": "How do you select an element with id 'header' in CSS?",
+    "answer_1": "#header",
+    "answer_2": ".header",
+    "answer_3": "*header",
+    "answer_4": "@header",
+    "right_answer": "#header"
+  },
+  {
+    "title": "Which CSS property is used to change the background color?",
+    "answer_1": "background-color",
+    "answer_2": "color",
+    "answer_3": "bgcolor",
+    "answer_4": "background",
+    "right_answer": "background-color"
+  },
+  {
+    "title": "What does the z-index property do?",
+    "answer_1": "Sets the stacking order of elements",
+    "answer_2": "Sets the size of elements",
+    "answer_3": "Sets the opacity of elements",
+    "answer_4": "Sets the position of elements",
+    "right_answer": "Sets the stacking order of elements"
+  },
+  {
+    "title": "How can you make a list not display bullet points in CSS?",
+    "answer_1": ".list { list-style-type: none; }",
+    "answer_2": ".list { bullet: none; }",
+    "answer_3": ".list { style: none; }",
+    "answer_4": ".list { display: none; }",
+    "right_answer": ".list { list-style-type: none; }"
+  }
+]

@@ -5,43 +5,61 @@ let bullets = document.querySelector(".bullets");
 let bulletsSpanContainer = document.querySelector(".bullets .spans");
 let quizArea = document.querySelector(".quiz-area");
 let answerArea = document.querySelector(".answer-area");
-let btn = document.querySelector(".submit-button");
-let butn = document.querySelector(".btn");
+let btn = document.querySelector(".quiz-app .submit-button");
+let butn = document.querySelector(".quiz-app .btn");
 let countDiv = document.querySelector(".countdown");
+let lobby = document.querySelector(".lobby");
+let loBtn = document.querySelector(".lobby .submit-button");
+let category = document.querySelector(".category span");
 
 let currentIndex = 0;
 let rightAnswers = 0;
 let countdownInterval;
+let theChoosenQuiz;
 
 function getQuestions() {
-  let myRequest = new XMLHttpRequest();
-  myRequest.onreadystatechange = function () {
-    if (this.readyState === 4 && this.status == 200) {
-      let questionsObject = JSON.parse(this.responseText);
-      let qcount = questionsObject.length;
-      createBullets(qcount);
-      addQuestionData(questionsObject[currentIndex], qcount);
-      countdown(20, qcount);
-      btn.onclick = function () {
-        let theRightAnswer = questionsObject[currentIndex].right_answer;
-        currentIndex++;
-        checkAnswer(theRightAnswer, qcount);
-        quizArea.innerHTML = "";
-        answerArea.innerHTML = "";
+  loBtn.onclick = function () {
+    quizChoose();
+    let myRequest = new XMLHttpRequest();
+    myRequest.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status == 200) {
+        let questionsObject = JSON.parse(this.responseText);
+        let qcount = questionsObject.length;
+        createBullets(qcount);
         addQuestionData(questionsObject[currentIndex], qcount);
-        handleBullets();
-        clearInterval(countdownInterval);
         countdown(20, qcount);
-        showResults(qcount);
-      };
-    }
-  };
+        btn.onclick = function () {
+          let theRightAnswer = questionsObject[currentIndex].right_answer;
+          currentIndex++;
+          checkAnswer(theRightAnswer, qcount);
+          quizArea.innerHTML = "";
+          answerArea.innerHTML = "";
+          addQuestionData(questionsObject[currentIndex], qcount);
+          handleBullets();
+          clearInterval(countdownInterval);
+          countdown(20, qcount);
+          showResults(qcount);
+        };
+      }
+    };
 
-  myRequest.open("GET", "html_questions.json", true);
-  myRequest.send();
+    quiz.style.cssText = "block";
+    category.innerHTML = theChoosenQuiz;
+    lobby.remove();
+    myRequest.open("GET", `${theChoosenQuiz}_questions.json`, true);
+    myRequest.send();
+  };
 }
 
 getQuestions();
+
+function quizChoose() {
+  let op = document.getElementsByName("op");
+  op.forEach((e) => {
+    e.checked ? (theChoosenQuiz = e.dataset.answer) : "";
+  });
+}
+
 function createBullets(num) {
   countSpan.innerHTML = num;
   for (let i = 0; i < num; i++) {
@@ -87,6 +105,7 @@ function checkAnswer(r, q) {
     rightAnswers++;
   }
 }
+
 function handleBullets() {
   let bulletsSpans = document.querySelectorAll(".bullets .spans span");
   let arrayOfSpans = Array.from(bulletsSpans);

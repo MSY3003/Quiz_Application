@@ -46,6 +46,28 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.lobby {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.lobby h2 {
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+.op-div {
+  background-color: white;
+  padding: 20px;
+}
+.lobby .options {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #dfdfdf;
+}
+.lobby input[type="Radio"]:checked + label {
+  color: #0075ff;
+}
 .quiz-app {
   background-color: #f8f8f8;
   padding: 15px;
@@ -90,12 +112,12 @@ body {
   position: relative;
   top: -1px;
 }
-.quiz-app .btn {
+.btn {
   background-color: #fff;
   padding: 0 20px 20px;
   margin-top: 15px;
 }
-.quiz-app .submit-button {
+.submit-button {
   background-color: #0075ff;
   width: 100%;
   padding: 15px;
@@ -107,7 +129,7 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
-.quiz-app .submit-button:hover {
+.submit-button:hover {
   background-color: #0068df;
 }
 .quiz-app .bullets {
