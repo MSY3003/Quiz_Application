@@ -9,24 +9,24 @@
   },
   {
     "title": "Which company developed JavaScript?",
-    "answer_1": "Netscape",
+    "answer_1": "IBM",
     "answer_2": "Microsoft",
     "answer_3": "Oracle",
-    "answer_4": "IBM",
+    "answer_4": "Netscape",
     "right_answer": "Netscape"
   },
   {
     "title": "Which of the following is a JavaScript data type?",
-    "answer_1": "String",
-    "answer_2": "Character",
+    "answer_1": "Character",
+    "answer_2": "String",
     "answer_3": "Float",
     "answer_4": "Double",
     "right_answer": "String"
   },
   {
     "title": "How do you declare a variable in JavaScript?",
-    "answer_1": "var myVar;",
-    "answer_2": "variable myVar;",
+    "answer_1": "variable myVar;",
+    "answer_2": "var myVar;",
     "answer_3": "v myVar;",
     "answer_4": "declare myVar;",
     "right_answer": "var myVar;"
@@ -41,9 +41,9 @@
   },
   {
     "title": "Which operator is used to assign a value to a variable?",
-    "answer_1": "=",
+    "answer_1": "-",
     "answer_2": ":",
-    "answer_3": "-",
+    "answer_3": "=",
     "answer_4": "*",
     "right_answer": "="
   },

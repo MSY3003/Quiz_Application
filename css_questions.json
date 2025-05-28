@@ -1,16 +1,16 @@
 [
   {
     "title": "What does CSS stand for?",
-    "answer_1": "Cascading Style Sheets",
-    "answer_2": "Creative Style System",
+    "answer_1": "Creative Style System",
+    "answer_2": "Cascading Style Sheets",
     "answer_3": "Computer Style Sheets",
     "answer_4": "Colorful Style Sheets",
     "right_answer": "Cascading Style Sheets"
   },
   {
     "title": "Which property is used to change the text color in CSS?",
-    "answer_1": "color",
-    "answer_2": "font-color",
+    "answer_1": "font-color",
+    "answer_2": "color",
     "answer_3": "text-color",
     "answer_4": "background-color",
     "right_answer": "color"
@@ -25,9 +25,9 @@
   },
   {
     "title": "Which property is used to change the font size in CSS?",
-    "answer_1": "font-size",
+    "answer_1": "size",
     "answer_2": "text-size",
-    "answer_3": "size",
+    "answer_3": "font-size",
     "answer_4": "font-style",
     "right_answer": "font-size"
   },
@@ -41,10 +41,10 @@
   },
   {
     "title": "Which property controls the spacing between the lines of text?",
-    "answer_1": "line-height",
+    "answer_1": "text-spacing",
     "answer_2": "spacing",
     "answer_3": "height",
-    "answer_4": "text-spacing",
+    "answer_4": "line-height",
     "right_answer": "line-height"
   },
   {
@@ -57,8 +57,8 @@
   },
   {
     "title": "Which CSS property is used to change the background color?",
-    "answer_1": "background-color",
-    "answer_2": "color",
+    "answer_1": "color",
+    "answer_2": "background-color",
     "answer_3": "bgcolor",
     "answer_4": "background",
     "right_answer": "background-color"
@@ -70,13 +70,5 @@
     "answer_3": "Sets the opacity of elements",
     "answer_4": "Sets the position of elements",
     "right_answer": "Sets the stacking order of elements"
-  },
-  {
-    "title": "How can you make a list not display bullet points in CSS?",
-    "answer_1": ".list { list-style-type: none; }",
-    "answer_2": ".list { bullet: none; }",
-    "answer_3": ".list { style: none; }",
-    "answer_4": ".list { display: none; }",
-    "right_answer": ".list { list-style-type: none; }"
   }
 ]

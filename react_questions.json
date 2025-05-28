@@ -1,34 +1,34 @@
 [
   {
     "title": "What is React?",
-    "answer_1": "A JavaScript library for building user interfaces",
+    "answer_1": "A CSS framework",
     "answer_2": "A programming language",
     "answer_3": "A database",
-    "answer_4": "A CSS framework",
+    "answer_4": "A JavaScript library for building user interfaces",
     "right_answer": "A JavaScript library for building user interfaces"
   },
   {
     "title": "Who developed React?",
-    "answer_1": "Facebook",
-    "answer_2": "Google",
+    "answer_1": "Google",
+    "answer_2": "Facebook",
     "answer_3": "Microsoft",
     "answer_4": "Twitter",
     "right_answer": "Facebook"
   },
   {
     "title": "What is the main concept behind React?",
-    "answer_1": "Components",
+    "answer_1": "Modules",
     "answer_2": "Classes",
     "answer_3": "Functions",
-    "answer_4": "Modules",
+    "answer_4": "Components",
     "right_answer": "Components"
   },
   {
     "title": "What is JSX?",
-    "answer_1": "A syntax extension for JavaScript",
+    "answer_1": "A testing framework",
     "answer_2": "A database query language",
     "answer_3": "A CSS preprocessor",
-    "answer_4": "A testing framework",
+    "answer_4": "A syntax extension for JavaScript",
     "right_answer": "A syntax extension for JavaScript"
   },
   {
@@ -41,17 +41,17 @@
   },
   {
     "title": "Which hook is used to manage state in functional components?",
-    "answer_1": "useState",
-    "answer_2": "useEffect",
+    "answer_1": "useEffect",
+    "answer_2": "useState",
     "answer_3": "useReducer",
     "answer_4": "useContext",
     "right_answer": "useState"
   },
   {
     "title": "What is the purpose of 'props' in React?",
-    "answer_1": "To pass data from one component to another",
+    "answer_1": "To handle user input",
     "answer_2": "To manage local state",
-    "answer_3": "To handle user input",
+    "answer_3": "To pass data from one component to another",
     "answer_4": "To define styles for components",
     "right_answer": "To pass data from one component to another"
   },
@@ -62,21 +62,5 @@
     "answer_3": "A method for handling events",
     "answer_4": "A component that renders other components",
     "right_answer": "A function that takes a component and returns a new component"
-  },
-  {
-    "title": "How do you create a class component in React?",
-    "answer_1": "class MyComponent extends React.Component {}",
-    "answer_2": "function MyComponent() {}",
-    "answer_3": "<MyComponent />",
-    "answer_4": "(props) => { return <div />; }",
-    "right_answer": "class MyComponent extends React.Component {}"
-  },
-  {
-    "title": "'useEffect' is used for which of the following?",
-    "answer_1": "'Side effects' in functional components",
-    "answer_2": "'Rendering' components",
-    "answer_3": "'Managing state'",
-    "answer_4": "'Styling' components",
-    "right_answer": "'Side effects' in functional components"
   }
 ]
