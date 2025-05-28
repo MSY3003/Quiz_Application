@@ -43,11 +43,11 @@ function getQuestions() {
       }
     };
 
-    quiz.style.cssText = "block";
-    category.innerHTML = theChoosenQuiz;
-    lobby.remove();
     myRequest.open("GET", `${theChoosenQuiz}_questions.json`, true);
     myRequest.send();
+    lobby.remove();
+    category.innerHTML = theChoosenQuiz;
+    quiz.style.cssText = "block";
   };
 }
 
